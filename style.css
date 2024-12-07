@@ -1,0 +1,96 @@
+/* Custom styles for the side navbar */
+.side-navbar {
+    position: fixed;
+ /* Adjusted top to not overlap the navbar */
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color:white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it's above content */
+  }
+
+  .side-navbar a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .side-navbar a:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .side-navbar .list-group-item {
+    border: none;
+  }
+
+  /* Content area to the right of the side navbar *
+
+  /* Adjust the navbar */
+  .navbar {
+    position: relative;
+    z-index: 200; /
+  }
+  #h1{
+    margin-left: 30px;
+  }
+  #p{
+    margin-left: 30px;
+  }
+  #h2{
+    text-align: center;
+  }
+
+  /* Style for the side navbar */
+.side-navbar {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    padding-top: 60px; /* Space for the navbar */
+    background-color: #f8f9fa; /* Light background for the sidebar */
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content area to display the blog posts */
+.main-content {
+    margin-left: 250px; /* Offset the content to make room for the sidebar */
+    padding: 20px;
+}
+
+/* Style for each post */
+.post {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Make the blog post titles stand out */
+.post h3 {
+    margin-bottom: 10px;
+}
+
+/* Make sure the posts do not overlap */
+#blogPosts {
+    padding-left: 30px;
+}
+
+/* Make the content responsive */
+@media (max-width: 768px) {
+    .side-navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
